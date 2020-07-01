@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "redis.redis",
+      "type": "java.lang.String",
+      "description": "Description for redis.redis."
+    },
+    {
+      "name": "redis.port",
+      "type": "java.lang.String",
+      "description": "Description for redis.port."
+    },
+    {
+      "name": "redis.host",
+      "type": "java.lang.String",
+      "description": "Description for redis.host."
+    }
+  ] }

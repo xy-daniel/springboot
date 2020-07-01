@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /yaml
+redis:
+    port: 6379
+    host:
+      - 192.168.25.128
+      - 192.168.25.129
+      - 192.168.25.130
+    # 对象
+    redis:
+      - port: 6379
+        host: 192.168.131
+      - port: 6380
+        host: 192.168.132

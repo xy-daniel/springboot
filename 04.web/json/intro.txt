@@ -1,0 +1,25 @@
+HttpMessageConverter有两方面的功能：
+	1、看名字就知道就知道这是一个消息转换工具
+	2、将服务端返回对象序列化成JSON字符串
+	3、将前端传过来的JSON字符串反序列化成一个Java对象
+
+所有的JSON生成都离不开对应的HttpMessageConverter
+SpringMvc中自动配置了JackSon和JSON的HttpMessageConverter，所以用户使用Jackson和Gson的话没有其他额外的配置只需要添加对应的依赖就可以了
+SPringBoot中又对此进行了自动化配置JacksonHttpMessageConvertersConfiguration以及GsonHttpMessageConvertersConfiguration
+
+切换为Gson
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-json</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>

@@ -1,0 +1,2 @@
+(WebMvcAutoConfiguration---->addResourceHandlers)---->(WebMvcProperties---->private String staticPathPattern = "/**";)
+静态资源自动化配置类默认/**
